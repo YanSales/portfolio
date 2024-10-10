@@ -1,0 +1,10 @@
+<div class="skills-container">
+  <h1>Minhas Habilidades</h1>
+  <div class="skills-list">
+    <div class="skill-card" *ngFor="let skill of skills">
+      <img [src]="skill.icon" alt="{{ skill.name }} icon" class="skill-icon" />
+      <h2>{{ skill.name }}</h2>
+      <p>Nível de Proficiência: {{ skill.proficiency }}</p>
+    </div>
+  </div>
+</div>

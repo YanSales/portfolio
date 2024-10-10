@@ -1,0 +1,72 @@
+.projects-section {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+
+  .project {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--primary-color);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
+    }
+
+    a.project-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      transition: color 0.4s ease-in-out, transform 0.4s ease-in-out;
+
+      &:hover {
+        color: var(--hover-color);
+        transform: scale(1.08) rotate(1deg);  // Suave aumento com leve rotação
+        h2 {
+          transform: scale(1.08) rotate(1deg);  // Reflete a transformação no título
+          color: var(--hover-color);  // Muda também a cor do título ao hover
+        }
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: var(--secondary-color);
+    }
+
+    .tech-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.3s ease;  // Animação mais fluida
+
+        &:hover {
+          transform: scale(1.3) rotate(5deg);  // Suave rotação junto com o aumento
+          opacity: 0.8;  // Diminui a opacidade ao passar o mouse
+        }
+      }
+    }
+
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

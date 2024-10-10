@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a routerLink="/" class="navbar-logo">Yan Sales | Portfólio</a>
+    <ul class="navbar-links">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/projects">Projetos</a></li>
+      <li><a routerLink="/skills">Habilidades</a></li>
+      <li><a routerLink="/contact">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- Botão de alternância do tema -->
+  <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" (change)="toggleTheme()" [checked]="isDarkTheme" />
+    <label for="theme-switch" class="toggle-label">
+      <span class="toggle-icon sun">🌞</span>
+      <span class="toggle-icon moon">🌙</span>
+    </label>
+  </div>
+</nav>

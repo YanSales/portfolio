@@ -1,0 +1,50 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Ocupa toda a altura da tela
+  background: var(--background-day); // Fundo que muda conforme o tema
+  padding: 20px;
+  text-align: center; // Centraliza o texto
+
+  .content {
+    max-width: 800px; // Limita a largura do conteúdo
+    padding: 150px;
+    border-radius: 10 14px 15px rgb(0, 0, 0); // Cantos arredondados
+    box-shadow: 10 4px 20px rgb(0, 0, 0); // Sombra para dar profundidade
+    background-color: var(--white); // Cor de fundo do conteúdo
+
+    .title {
+      font-size: 2.5rem; // Aumenta o tamanho do título
+      color: var(--primary-color); // Cor primária
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.5rem; // Tamanho do subtítulo
+      color: var(--text-color); // Cor do texto
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 1.2rem; // Tamanho da descrição
+      color: var(--text-color);
+      line-height: 1.6; // Aumenta o espaçamento entre linhas
+      margin-bottom: 20px; // Espaço entre a descrição e o botão
+    }
+
+    .btn {
+      display: inline-block; // Alinha o botão em bloco
+      padding: 12px 25px; // Espaçamento interno do botão // Cor de fundo do botão
+      color: var(--white); // Cor do texto do botão
+      border: none;
+      border-radius: 5px; // Cantos arredondados no botão
+      text-decoration: none; // Remove sublinhado
+      transition: background-color 0.3s, transform 0.3s; // Transições suaves
+
+      &:hover {
+        transform: translateY(-2px); // Levanta o botão ao passar o mouse
+      }
+    }
+  }
+}

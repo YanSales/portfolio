@@ -1,0 +1,79 @@
+//src/styles/styles.scss
+
+@import 'variables';
+@import 'theme';
+
+
+
+:root {
+  --navbar-bg-color: #fff; // Cor de fundo da navbar no tema claro
+  --primary-color: #000000; // Cor primária
+  --text-color: #000000; // Cor do texto
+}
+
+.dark-theme {
+  --navbar-bg-color: #000000; // Cor de fundo da navbar no tema escuro
+  --primary-color: #ffffff; // Cor primária no tema escuro
+  --text-color: #fff; // Cor do texto no tema escuro
+}
+:root {
+  --footer-bg-color: #f8f9fa; // Cor de fundo do footer no tema claro
+  --primary-color: #000000; // Cor primária
+  --hover-color: #000000; // Cor ao passar o mouse
+  --text-color: #000000; // Cor do texto
+}
+
+.dark-theme {
+  --footer-bg-color: #000000; // Cor de fundo do footer no tema escuro
+  --primary-color: #ffffff; // Cor primária no tema escuro
+  --hover-color: #ffffff; // Cor ao passar o mouse no tema escuro
+  --text-color: #ffffff; // Cor do texto no tema escuro
+}
+
+body.dark-theme h2, body.dark-theme h1 {
+  color: #f1f1f1; // Ajuste de cor para o título no tema escuro
+}
+.btn {
+  padding: 10px 20px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--btn-hover-bg-color); /* Cor ao passar o mouse */
+  }
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('../assets/fonts/NeueMontreal-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('../assets/fonts/NeueMontreal-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('../assets/fonts/NeueMontreal-Italic.otf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Neue Montreal', sans-serif;
+}
+
+
+
+
+
+

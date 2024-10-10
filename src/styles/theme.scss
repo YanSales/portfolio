@@ -1,0 +1,31 @@
+// src/styles/theme.scss
+
+@import 'variables';
+
+// Tema Claro
+.light-theme {
+  background-color: $background-light;
+  color: $text-color-dark;
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Tema Escuro
+.dark-theme {
+  background-color: $background-dark;
+  color: $text-color-light;
+
+  a {
+    color: $primary-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.contact-container {
+  padding: 20px;
+  background-color: var(--bg-color);
+
+  h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--text-color);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      font-size: 1rem;
+      color: var(--text-color);
+      background-color: var(--card-bg-color);
+
+      &:focus {
+        outline: none;
+        border-color: var(--primary-color);
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--btn-bg-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--btn-bg-color-hover);
+    }
+  }
+}

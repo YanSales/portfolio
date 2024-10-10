@@ -1,0 +1,12 @@
+<div class="projects-section">
+  <div class="project" *ngFor="let project of projects">
+    <!-- Link envolvendo todo o conteúdo do projeto -->
+    <a [href]="project.repoLink" target="_blank" class="project-link">
+      <h2>{{ project.name }}</h2>
+      <p>{{ project.date }} / {{ project.type }} / {{ project.role }}</p>
+    </a>
+      <div class="tech-icons">
+        <img *ngFor="let tech of project.technologies" [src]="tech.icon" [alt]="tech.name" />
+      </div>
+  </div>
+</div>

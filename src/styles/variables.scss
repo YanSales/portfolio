@@ -1,0 +1,26 @@
+// src/styles/variables.scss
+
+// Cores
+$primary-color: #3498db;   // Azul
+$secondary-color: #2ecc71; // Verde
+$text-color: #333;         // Cor do texto
+$background-light: #f8f9fa; // Fundo claro
+$background-dark: #0b0c0e; // Fundo escuro
+$text-color-light: #fff;   // Texto claro
+$text-color-dark: #333;    // Texto escuro
+
+// Espaciamentos
+$padding: 16px;
+$margin: 16px;
+:root {
+  --btn-bg-color: #ffffff; /* Cor de fundo do botão para tema claro */
+  --btn-hover-bg-color: #ffffff; /* Cor do botão ao passar o mouse para tema claro */
+  --btn-text-color: #000000; /* Cor do texto do botão para tema claro */
+}
+
+/* Tema escuro */
+body.dark-theme {
+  --btn-bg-color: #0b0c0e; /* Cor de fundo do botão para tema escuro */
+  --btn-hover-bg-color: #0b0c0e; /* Cor do botão ao passar o mouse para tema escuro */
+  --btn-text-color: #ffffff; /* Cor do texto do botão para tema escuro */
+}
