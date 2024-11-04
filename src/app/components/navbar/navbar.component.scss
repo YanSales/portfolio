@@ -2,6 +2,9 @@
   background-color: var(--navbar-bg-color);
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1000;
+  height: 33%;
 
   &.dark-theme {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); // Sombra mais intensa para o tema escuro
@@ -13,10 +16,20 @@
     align-items: center;
 
     .navbar-logo {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: var(--primary-color);
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      span:last-child {
+        text-shadow: 0px 0px 25px red; // Sombra vermelha para "Sales"
+      }
+    }
+
+    .navbar-logo:hover {
+      transform: scale(1.1);
     }
 
     .navbar-links {
@@ -28,11 +41,18 @@
         a {
           text-decoration: none;
           color: var(--text-color);
-          transition: color 0.3s, opacity 0.3s; // Adicionando transição para opacidade
+          transition: color 0.3s, text-shadow 0.3s, opacity 0.3s; // Adicionando transição para opacidade
 
           &:hover {
-            color: var(--primary-color);
-            opacity: 0.7; // Fica menos visível ao passar o mouse
+            color: red;
+            text-shadow: 0 0 10px red;
+            opacity: 0.8; // Fica menos visível ao passar o mouse
+          }
+
+          &.router-link-active {
+            text-decoration: underline;
+            color: red;
+            text-shadow: 0 0 10px red;
           }
         }
       }
@@ -72,11 +92,12 @@
     transition: transform 0.3s;
   }
 
-  input[type="checkbox"]:checked + .toggle-label {
-    background-color: #4d4d4d; /* Cor para o tema escuro */
+  input[type="checkbox"]:checked+.toggle-label {
+    background-color: #4d4d4d;
+    /* Cor para o tema escuro */
   }
 
-  input[type="checkbox"]:checked + .toggle-label:before {
+  input[type="checkbox"]:checked+.toggle-label:before {
     transform: translateX(30px);
   }
 
@@ -85,7 +106,8 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
-    pointer-events: none; /* Desativa a interação com os ícones */
+    pointer-events: none;
+    /* Desativa a interação com os ícones */
   }
 
   .sun {
@@ -98,11 +120,11 @@
     color: white;
   }
 
-  input[type="checkbox"]:checked ~ .toggle-label .sun {
+  input[type="checkbox"]:checked~.toggle-label .sun {
     opacity: 0;
   }
 
-  input[type="checkbox"]:not(:checked) ~ .toggle-label .moon {
+  input[type="checkbox"]:not(:checked)~.toggle-label .moon {
     opacity: 0;
   }
 }

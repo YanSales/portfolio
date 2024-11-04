@@ -26,6 +26,32 @@ export class SkillsComponent {
       proficiency: 'Avançado',
       icon: 'assets/icons/css.png' // Substitua pelo URL do ícone
     },
+    {
+      id: 4,
+      name: 'C#',
+      proficiency: 'Avançado',
+      icon: 'assets/icons/c-sharp.png' // Substitua pelo URL do ícone
+    },
+    {
+      id: 5,
+      name: '.Net',
+      proficiency: 'Avançado',
+      icon: 'assets/icons/dotnet.png' // Substitua pelo URL do ícone
+    },
+    {
+      id: 6,
+      name: 'HTML',
+      proficiency: 'Avançado',
+      icon: 'assets/icons/html.png' // Substitua pelo URL do ícone
+    },
+    {
+      id: 7,
+      name: 'Java',
+      proficiency: 'Avançado',
+      icon: 'assets/icons/java.png' // Substitua pelo URL do ícone
+    },
 
   ];
 }
+
+

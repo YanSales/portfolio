@@ -1,8 +1,22 @@
 <div class="home-container">
-  <div class="content">
-    <h1>{{ nome }}</h1>
-    <h2>{{ funcao }}</h2>
-    <p>{{ descricao }}</p>
-    <a href="/projects" class="btn">Veja meus projetos</a>
-  </div>
+  <section class="home" id="home">
+    <div class="content">
+      <h1>Opa, é o <span>Yan</span></h1>
+      <h3 class="text-animation">Eu sou <span>{{ currentWord }}</span></h3> <!-- Exibe a palavra dinâmica -->
+      <p>"Estudante de Análise e Desenvolvimento de Sistemas em Brasília, DF.
+        Tenho paixão por tecnologia e sou proficiente em Java e .NET.
+        Quando não estou codificando, gosto de ler mangás e assistir
+        animes, sempre buscando novas inspirações tanto na programação
+        quanto nas minhas histórias favoritas."</p>
+
+        <div class="btn-group">
+          <a href="https://www.linkedin.com/in/yan-sales-535429270" target="_blank" rel="noopener noreferrer" class="btn">Hire-me</a>
+          <a href="../../../assets/documents/Yan-2024-08-f03-01_A_BR.pdf" download="Yan-Silva-Sales-CV" class="btn">CV</a>
+        </div>
+    </div>
+
+    <div class="home-img">
+      <img src="../../../assets/icons/self.jpeg" alt="Imagem de Yan">
+    </div>
+  </section>
 </div>

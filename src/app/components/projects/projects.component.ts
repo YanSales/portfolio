@@ -16,7 +16,7 @@ export class ProjectsComponent implements OnInit {
         { name: 'c-sharp', icon: 'assets/icons/c-sharp.png' },
         { name: 'angular', icon: 'assets/icons/angular.png' }
       ],
-      repoLink: 'https://github.com/username/production-hasu'
+      repoLink: 'https://github.com/YanSales/TaskmasterAPI'
     },
     {
       name: 'Product Catalog API',
@@ -28,7 +28,8 @@ export class ProjectsComponent implements OnInit {
         { name: 'html', icon: 'assets/icons/html.png' },
         { name: 'css', icon: 'assets/icons/css.png' },
         { name: 'javascript', icon: 'assets/icons/javascript.png' }
-      ]
+      ],
+      repoLink: 'https://github.com/YanSales/ProductCatalogAPI'
     },
     {
       name: 'Weather Wizard API',

@@ -6,3 +6,4 @@ export interface Skill {
   proficiency: string; // Por exemplo: 'Iniciante', 'Intermediário', 'Avançado'
   icon: string; // URL do ícone da habilidade
 }
+

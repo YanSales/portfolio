@@ -1,50 +1,153 @@
 .home-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  height: 100vh; // Ocupa toda a altura da tela
+  height: 33%; // Ocupa toda a altura da tela
   background: var(--background-day); // Fundo que muda conforme o tema
   padding: 20px;
-  text-align: center; // Centraliza o texto
+  text-align: left;
+
 
   .content {
     max-width: 800px; // Limita a largura do conteúdo
-    padding: 150px;
-    border-radius: 10 14px 15px rgb(0, 0, 0); // Cantos arredondados
-    box-shadow: 10 4px 20px rgb(0, 0, 0); // Sombra para dar profundidade
-    background-color: var(--white); // Cor de fundo do conteúdo
-
-    .title {
-      font-size: 2.5rem; // Aumenta o tamanho do título
-      color: var(--primary-color); // Cor primária
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 1.5rem; // Tamanho do subtítulo
-      color: var(--text-color); // Cor do texto
-      margin-bottom: 15px;
-    }
-
-    .description {
-      font-size: 1.2rem; // Tamanho da descrição
-      color: var(--text-color);
-      line-height: 1.6; // Aumenta o espaçamento entre linhas
-      margin-bottom: 20px; // Espaço entre a descrição e o botão
-    }
-
-    .btn {
-      display: inline-block; // Alinha o botão em bloco
-      padding: 12px 25px; // Espaçamento interno do botão // Cor de fundo do botão
-      color: var(--white); // Cor do texto do botão
-      border: none;
-      border-radius: 5px; // Cantos arredondados no botão
-      text-decoration: none; // Remove sublinhado
-      transition: background-color 0.3s, transform 0.3s; // Transições suaves
-
-      &:hover {
-        transform: translateY(-2px); // Levanta o botão ao passar o mouse
-      }
-    }
+    padding: 50px;
+    border-radius: 14px; // Ajuste da borda arredondada
+    background-color: var(--background-day); // Cor de fundo do conteúdo
+    z-index: 1;
   }
+
+  section {
+    min-height: 100vh;
+    padding: 10rem 12%;
+  }
+
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  span {
+    color: red;
+  }
+
+  .logo span {
+    color: red;
+  }
+
+   h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    display: inline-block;
+
+  }
+
+   h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    line-height: 1.8;
+  }
+
+
+  .home-img img {
+    border-radius: 50%;
+  }
+
+  .home-img img {
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px red;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+
+  .home-img img:hover {
+    box-shadow: 0 0 25px red, 0 0 50px red, 0 0 100px red;
+  }
+
+   p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+  }
+
+  .text-animation span {
+    color: red;
+    border-right: 2px solid red;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.4s ease-in-out, text-shadow 0.3s;
+  }
+
+  .text-animation span:hover {
+    text-shadow: 0 0 25px red, 0 0 50px red, 0 0 100px red;
+  }
+
 }
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: red; }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2.2rem; // Reduzindo o padding para diminuir o botão
+  background: red; // Vermelho mais suave
+  box-shadow: 0 0 15px red; // Box-shadow menor e com cor ajustada
+  border-radius: 3rem; // Bordas mais suaves
+  font-size: 1.4rem; // Reduzindo a fonte
+  color: black; // Cor do texto branco para maior contraste
+  border: 2px solid transparent;
+  letter-spacing: 0.08rem; // Ajuste na espaçamento
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px red; // Efeito mais leve no hover
+  background: red; // Cor de fundo mais vibrante no hover
+  color: black;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem; // Ajuste no espaçamento entre os botões
+}
+
+.btn-group a:nth-of-type(2) {
+  background-color: var(--background-day); // Fundo branco para contraste
+  color: red; // Vermelho no texto
+  border: 2px solid red;
+  box-shadow: 0 0 15px transparent; // Box-shadow inicialmente transparente
+  transition: transform 0.25s ease, color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.btn-group a:nth-of-type(2):hover {
+  box-shadow: 0 0 20px red;
+  background-color: red; // Vermelho no fundo ao passar o cursor
+  color: black; // Texto branco no hover
+}
+

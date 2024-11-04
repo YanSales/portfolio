@@ -1,11 +1,11 @@
 <nav class="navbar">
   <div class="navbar-container">
-    <a routerLink="/" class="navbar-logo">Yan Sales | Portfólio</a>
+    <a routerLink="/" class="navbar-logo">Yan <span>Sales</span></a>
     <ul class="navbar-links">
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/projects">Projetos</a></li>
-      <li><a routerLink="/skills">Habilidades</a></li>
-      <li><a routerLink="/contact">Contato</a></li>
+      <li><a routerLink="/" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+      <li><a routerLink="/projects" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">Projetos</a></li>
+      <li><a routerLink="/skills" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">Habilidades</a></li>
+      <li><a routerLink="/contact" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">Contato</a></li>
     </ul>
   </div>
 
