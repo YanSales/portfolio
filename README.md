@@ -1,27 +1,49 @@
-# Portfolio
+## Meu Portfólio Pessoal 🌐
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Este repositório contém o código-fonte do meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades e experiência como desenvolvedor Full Stack. A plataforma é responsiva e otimizada para uma navegação rápida, oferecendo uma visão clara dos meus trabalhos e áreas de especialização.
 
-## Development server
+### Tecnologias Utilizadas 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Frontend:** Angular, HTML5, SCSS
+- **Backend:** Node.js, C#
+- **Estilização:** CSS3, SCSS com variáveis personalizadas e tema claro/escuro
+- **Gerenciamento de Pacotes:** NPM
+- **Outras Ferramentas:** Git, APIs externas
 
-## Code scaffolding
+### Funcionalidades 🛠️
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Alternância entre tema claro e escuro com um switch interativo.
+- Seção de projetos dinâmica, exibindo os principais trabalhos com links para os repositórios.
+- Página "Habilidades" que destaca as tecnologias que domino.
+- Formulário de contato funcional.
 
-## Build
+### Objetivo 💡
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Este portfólio foi criado com o objetivo de ser uma vitrine para minhas habilidades como desenvolvedor. Ele é constantemente atualizado à medida que novos projetos são concluídos e novas tecnologias são aprendidas.
 
-## Running unit tests
+### Como rodar o projeto localmente 🖥️
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/YanSilvaSales/portfolio.git
+   ```
 
-## Running end-to-end tests
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Rode o projeto:
+   ```bash
+   npm start
+   ```
 
-## Further help
+4. Acesse em seu navegador:
+   ```
+   http://localhost:4200
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Contato 📬
+
+Se tiver qualquer dúvida ou quiser colaborar, sinta-se à vontade para abrir uma issue ou entrar em contato comigo!
+
